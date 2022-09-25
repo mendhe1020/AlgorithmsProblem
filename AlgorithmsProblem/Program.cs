@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Algorithms Programs");
+            BinarySearch binarySearch = new BinarySearch();
+            binarySearch.Search(@"C:\Users\anura\Music\AlgorithmsProblem\AlgorithmsProblem\AlgorithmsProblem\Words.txt");
         }
     }
 }
