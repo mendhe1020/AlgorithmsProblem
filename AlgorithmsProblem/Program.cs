@@ -6,6 +6,7 @@ namespace AlgorithmsProblem
     {
         static void Main(string[] args)
         {
+            const string FILE_PATH = @"C:\Users\anura\Music\AlgorithmsProblem\AlgorithmsProblem\AlgorithmsProblem\Words.txt";
             bool flag = true;
             while (flag)
             {
@@ -20,6 +21,14 @@ namespace AlgorithmsProblem
                     case 2:
                         InsertionSort insertionsort = new InsertionSort();
                         insertionsort.Insertion();
+                        break;
+                    case 3:
+                        BubbleSort bubblesort = new BubbleSort();
+                        bubblesort.bubbleSort(FILE_PATH);
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice");
                         break;
                 }
             }
